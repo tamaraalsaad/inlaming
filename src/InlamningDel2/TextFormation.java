@@ -26,8 +26,8 @@ public class TextFormation {
         }
         lineCount++;
         characterCount += line.length();
-        if (!line.trim().isEmpty()){
-            String[] words = line.trim().split(" ");
+        if (!line.isEmpty()){
+            String[] words = line.split(" ");
             wordCount += words.length;
 
             for ( String word:words) {
