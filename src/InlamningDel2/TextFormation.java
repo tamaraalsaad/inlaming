@@ -30,7 +30,8 @@ public class TextFormation {
             String[] words = line.split(" ");
             wordCount += words.length;
 
-            for ( String word:words) {
+            for  (int i = 0; i < words.length; i++) {
+                String word = words[i];
                 if (word.length() <= longestWord.length()) {
                 } else {
                     longestWord = word;
